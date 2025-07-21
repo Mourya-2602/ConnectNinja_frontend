@@ -66,7 +66,7 @@ const Contact = () => {
     setStatus({ type: '', message: '' });
 
     try {
-      const response = await fetch('https://connect-ninja-backend.vercel.app', {
+      const response = await fetch('https://connect-ninja-backend.vercel.app/api/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
